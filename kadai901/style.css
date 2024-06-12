@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(222, 245, 253);
+}
+
+.marubox{
+    background-color: #e6f7ff;
+    border: 2px solid#333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.kadobox{
+    background-color: #fff2e6;
+    border: 2px solid#333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.tensenbox{
+    background-color: #f9e6ff;
+    border: 2px solid#333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0px;
+    border-style: dashed;
+}
+
+.box-img{
+    width: 10%;
+}
