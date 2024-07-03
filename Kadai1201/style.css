@@ -1,0 +1,38 @@
+@media screen and (max-width:979px){
+    .box-img{
+    width: calc(33.33% -20px);
+    margin-right: 20px;
+    }
+}
+body{
+    background-color: rgb(225, 238, 241);
+}
+
+.blue{
+    background-color: #e6f7ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+}
+
+.orange{
+    background-color: #fff2e6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+}
+
+.purple{
+    background-color: #f9e6ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+    
+}
+
+/*.box-img{
+    width: 65%;
+}*/
