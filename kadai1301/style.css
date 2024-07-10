@@ -1,0 +1,80 @@
+header{
+    background-color: black;
+    color: white;
+    padding: 0%;
+    text-align: center;
+    font-size: 10px;
+    #h1{
+        margin-top: 0;
+    }
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(225, 238, 241);
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blue{
+    background-color: #e6f7ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+    width: 100%;
+}
+
+.orange{
+    background-color: #fff2e6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+    width: 100%;
+}
+
+.purple{
+    background-color: #f9e6ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+    width: 100%;
+    
+}
+
+.green{
+    background-color: rgb(204, 240, 204);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+    width: 100%;
+    
+}
+
+@media screen and (max-width:768px){
+    .blue{
+    width: calc(33.33% -20px);
+    margin-right: 20px;
+    }
+    .orange{
+        width: calc(33.33% -20px);
+        margin-right: 20px;
+    }
+    .purple{
+        width: calc(33.33% -20px);
+        margin-right: 20px;
+    }
+}
