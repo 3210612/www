@@ -1,38 +1,71 @@
-@media screen and (max-width:979px){
-    .box-img{
-    width: calc(33.33% -20px);
-    margin-right: 20px;
+body {
+    background-color: rgb(225, 238, 241);
+    margin: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 50px; 
+    padding: 20px;
+}
+
+.container div {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+    width: 100%;
+}
+
+.blue {
+    background-color: #e6f7ff;
+}
+
+.orange {
+    background-color: #fff2e6;
+}
+
+.purple {
+    background-color: #f9e6ff;
+}
+
+.green {
+    background-color: rgb(204, 240, 204);
+}
+
+/* 画面幅が1200px以下の場合は3列 */
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-body{
-    background-color: rgb(225, 238, 241);
+
+/* 画面幅が900px以下の場合は2列 */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.blue{
-    background-color: #e6f7ff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
+/* 画面幅が600px以下の場合は1列 */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
 }
-
-.orange{
-    background-color: #fff2e6;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
-}
-
-.purple{
-    background-color: #f9e6ff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
-    
-}
-
-/*.box-img{
-    width: 65%;
-}*/
