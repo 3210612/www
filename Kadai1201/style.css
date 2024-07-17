@@ -11,19 +11,20 @@ h1 {
 }
 
 .container {
-    display: grid; /* Flexboxからグリッドレイアウトに変更 */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; /* 空白を調整 */
+    display: grid; /* グリッドレイアウトを使用 */
+    grid-template-columns: repeat(3, 1fr); /* 初期状態で3列 */
+    gap: 20px; /* スペースの調整 */
     padding: 20px;
-    box-sizing: border-box; /* ボックスのサイズを調整 */
+    width: 100%; /* 幅を100%に設定 */
+    box-sizing: border-box; /* ボックスのサイズ調整 */
 }
 
 .container div {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgb(200, 198, 198);
-    box-sizing: border-box; /* ボックスのサイズを調整 */
-    width: 100%;
+    box-sizing: border-box; /* ボックスのサイズ調整 */
+    width: 100%; /* 幅を100%に設定 */
 }
 
 .blue {
@@ -56,12 +57,11 @@ h1 {
 @media (max-width: 600px) {
     .container {
         grid-template-columns: 1fr;
-        width: 80%;
     }
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%; /* 画像が親要素からはみ出さないように */
     height: auto;
     border-radius: 4px;
 }
