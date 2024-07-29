@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center;  /* 文字を中央揃え */
 }
 
 /* ヘッダー */
@@ -24,6 +25,7 @@ header {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;  /* 文字を中央揃え */
 }
 
 /* 各セクション */
@@ -35,17 +37,20 @@ header {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border: 2px solid #ccc;
     width: calc(33.333% - 20px);  /* 3つ並べるための幅調整 */
+    text-align: center;  /* 文字を中央揃え */
 }
 
 .container2 > div h3 {
     color: #333;
     font-size: 1.2em;
     margin-bottom: 10px;
+    text-align: center;  /* 文字を中央揃え */
 }
 
 .container2 > div p {
     color: #666;
     font-size: 0.9em;
+    text-align: center;  /* 文字を中央揃え */
 }
 
 /* タブレットサイズのレイアウト */
