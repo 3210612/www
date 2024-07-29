@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    text-align: center;  /* 文字を中央揃え */
+    text-align: center;
 }
 
 /* ヘッダー */
@@ -14,18 +14,20 @@ header {
     padding: 10px 0;
     text-align: center;
 }
+.container{
+    color: blue;
+}
 
 /* コンテナ */
 .container2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;  /* 文字を中央揃え */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* 各セクション */
@@ -36,27 +38,14 @@ header {
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border: 2px solid #ccc;
-    width: calc(33.333% - 20px);  /* 3つ並べるための幅調整 */
-    text-align: center;  /* 文字を中央揃え */
-}
-
-.container2 > div h3 {
-    color: #333;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    text-align: center;  /* 文字を中央揃え */
-}
-
-.container2 > div p {
-    color: #666;
-    font-size: 0.9em;
-    text-align: center;  /* 文字を中央揃え */
+    width: calc(33.333% - 40px);  /* 3つ並べるための幅調整 */
+    text-align: center;
 }
 
 /* タブレットサイズのレイアウト */
 @media (max-width: 1024px) {
     .container2 > div {
-        width: calc(50% - 20px);  /* 2つ並べるための幅調整 */
+        width: calc(50% - 40px);  /* 2つ並べるための幅調整 */
     }
 
     .container2 > div:nth-child(3) {
@@ -74,4 +63,43 @@ header {
     .container2 > div {
         width: 80%;  /* 縦に並べるための幅調整 */
     }
+}
+
+ul {
+    list-style-type: disc;  /* リストマーカーのスタイル */
+    padding-left: 6px;     /* リストアイテムの左側にスペースを確保 */
+    margin: 0;
+    color: blue;            /* リスト全体の文字色を青に */
+}
+
+/* リストアイテム */
+ul li {
+    margin-bottom: 5px;    /* 各リストアイテムの下にスペースを追加 */
+}
+
+/* リストアイテム内のテキスト */
+ul li p {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0;  /* 住所と電話番号の間隔を調整 */
+}
+
+.footer-content p:first-of-type {
+    margin-top: 0;  /* 住所の上にマージンを付けない */
+}
+
+.footer-content p:last-of-type {
+    margin-bottom: 0;  /* 電話番号の下にマージンを付けない */
 }
