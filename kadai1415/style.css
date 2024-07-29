@@ -65,22 +65,7 @@ header {
     }
 }
 
-ul {
-    list-style-type: disc;  /* リストマーカーのスタイル */
-    padding-left: 6px;     /* リストアイテムの左側にスペースを確保 */
-    margin: 0;
-    color: blue;            /* リスト全体の文字色を青に */
-}
 
-/* リストアイテム */
-ul li {
-    margin-bottom: 5px;    /* 各リストアイテムの下にスペースを追加 */
-}
-
-/* リストアイテム内のテキスト */
-ul li p {
-    margin: 0;
-}
 
 footer {
     background-color: #333;
